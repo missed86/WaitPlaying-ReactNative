@@ -1,20 +1,29 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native'
+import {View, Text, StyleSheet} from 'react-native'
+import BottomTab from './src/navigation/BottomTab'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <NavigationContainer>
+    <View style={styles.logoView}>
+      <Text style= {styles.logoText}>WaitPlaying</Text>
     </View>
-  );
+      <BottomTab/>
+    </NavigationContainer>
+  )
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  logoView: {
+    backgroundColor: '#000',
+    paddingTop:30,
+    justifyContent:'center',
+    width:'100%'
   },
-});
+  logoText: {
+    color: 'white',
+    fontSize: 30,
+    fontWeight: 'bold',
+    textAlign: 'center'
+  }
+})
