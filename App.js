@@ -1,29 +1,37 @@
-import { NavigationContainer } from '@react-navigation/native'
+// import { NavigationContainer } from '@react-navigation/native'
 import {View, Text, StyleSheet} from 'react-native'
-import BottomTab from './src/navigation/BottomTab'
+// import BottomTab from './src/navigation/BottomTab'
+import Main from './src/components/Main'
 
-export default function App() {
-  return (
-    <NavigationContainer>
-    <View style={styles.logoView}>
-      <Text style= {styles.logoText}>WaitPlaying</Text>
-    </View>
-      <BottomTab/>
-    </NavigationContainer>
-  )
+
+export default function App() { 
+  return <Main/>
 }
 
-const styles = StyleSheet.create({
-  logoView: {
-    backgroundColor: '#000',
-    paddingTop:30,
-    justifyContent:'center',
-    width:'100%'
-  },
-  logoText: {
-    color: 'white',
-    fontSize: 30,
-    fontWeight: 'bold',
-    textAlign: 'center'
-  }
-})
+
+
+// export default function App() {
+//   return (
+//     <NavigationContainer>
+//     <View style={styles.logoView}>
+//       <Text style= {styles.logoText}>WaitPlaying</Text>
+//     </View>
+//       <BottomTab/>
+//     </NavigationContainer>
+//   )
+// }
+
+// const styles = StyleSheet.create({
+//   logoView: {
+//     backgroundColor: '#000',
+//     paddingTop:30,
+//     justifyContent:'center',
+//     width:'100%'
+//   },
+//   logoText: {
+//     color: 'white',
+//     fontSize: 30,
+//     fontWeight: 'bold',
+//     textAlign: 'center'
+//   }
+// })
